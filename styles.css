@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+body {
+    width: fit-content;
+}
+
+button {
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.calc-container {
+    width: 300px;
+    height: 375px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid black;
+    border-radius: 10px;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.display {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background-color: rgb(166, 251, 230);
+    border: 2px solid purple;
+}
+
+.past-display {
+    margin-top: 8px;
+    align-self: flex-end;
+    font-size: 10px;
+}
+
+.current-display {
+    align-self: flex-end;
+    margin-bottom: 8px;
+    margin-top: -8px; 
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    gap: 3px;
+    background-color: blanchedalmond;    
+}
+
+.numbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    align-items: flex-end;
+    background-color: blanchedalmond;
+    
+}
+
+.numbers-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 14px;
+    background-color: rgb(240, 240, 240);
+}
+
+.operations-container {
+    width: 50px;
+    display: grid;
+    gap: 3px;
+    margin-left: 3px;
+}
+
+.clear-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+}
+
+.other-buttons-container {
+    display: flex;
+}
+
+ .operations-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;   
+}
+
+.clear, .operations-container button {
+    background-color: rgb(218, 218, 218);
+}
+
+.change-colors {
+    flex: 1;
+    background-color:rgb(208, 236, 245);
+}
